@@ -1,6 +1,7 @@
 package net.zird.testmod;
 
 import net.fabricmc.api.ModInitializer;
+import net.zird.testmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,5 +19,6 @@ public class TestMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
 	}
 }
